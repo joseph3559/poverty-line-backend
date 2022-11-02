@@ -7,4 +7,5 @@ class User < ApplicationRecord
     validates :username, presence: true, uniqueness: true
 
     has_one :user_profile
+    has_many :job_applications, through: :user_profile
 end

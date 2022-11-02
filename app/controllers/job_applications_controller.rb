@@ -24,7 +24,7 @@ class JobApplicationsController < ApplicationController
 
     private
     def job_application_params
-        params.permit(:cover_letter, :attachment)
+        params.permit(:cover_letter, :attachment, :user_profile_id)
     end
 
     def render_not_found_response

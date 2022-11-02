@@ -1095,3 +1095,610 @@ Processing by UserProfilesController#index as */*
 Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 1.1ms | Allocations: 1344)
 
 
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:37:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe64593c40>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (4.7ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"], ["created_at", "2022-11-02 22:37:49.075705"], ["updated_at", "2022-11-02 22:37:49.075705"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 201 Created in 143ms (Views: 27.2ms | ActiveRecord: 25.1ms | Allocations: 35710)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:41:23 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  in here", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  in here", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe642acba8>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  in here", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  in here", "attachment"=>"C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (1.6ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  in here"], ["attachment", "C:\\fakepath\\615-22-165_Sylvia Achayo_17 November 2022_HIV Care Support.pdf"], ["created_at", "2022-11-02 22:41:23.950463"], ["updated_at", "2022-11-02 22:41:23.950463"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (2.4ms)
+Completed 201 Created in 31ms (Views: 6.2ms | ActiveRecord: 33.5ms | Allocations: 3884)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:43:23 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe6c8590a8>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (6.0ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 22:43:23.471273"], ["updated_at", "2022-11-02 22:43:23.471273"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 201 Created in 28ms (Views: 1.5ms | ActiveRecord: 12.0ms | Allocations: 2094)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:43:38 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe64437770>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.5ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 22:43:38.783861"], ["updated_at", "2022-11-02 22:43:38.783861"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (1.44ms)
+Completed 201 Created in 15ms (Views: 2.4ms | ActiveRecord: 6.5ms | Allocations: 2094)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:47:24 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe64619228>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 1525ms (ActiveRecord: 19.7ms | Allocations: 1027925)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008d18>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:48:24 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe5a2e27a8>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2570)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008de0>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:48:47 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe5a361788>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2569)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008ed0>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:49:14 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe5a480448>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008f98>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:49:35 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe5a689190>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000009038>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:50:58 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe58af5ed8>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2569)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000009100>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:51:11 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe59095460>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}} }[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000091c8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:51:16 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fbe581252c8>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2569)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000009268>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:52:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fb220601128>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\EARNEST ACHAYO CURRICULUM VITAE 13062021 (1).pdf"}} }[0m
+Completed 500 Internal Server Error in 1510ms (ActiveRecord: 4.2ms | Allocations: 1056836)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000005230>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started GET "/job_applications" for 127.0.0.1 at 2022-11-03 01:55:57 +0300
+Processing by JobApplicationsController#index as HTML
+  [1m[36mJobApplication Load (7.6ms)[0m  [1m[34mSELECT "job_applications".* FROM "job_applications"[0m
+  ↳ app/controllers/job_applications_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.45ms)
+Completed 200 OK in 41ms (Views: 32.7ms | ActiveRecord: 7.6ms | Allocations: 3927)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 01:55:57 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 574)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:56:26 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fb222989a28>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2578)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000053e8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:56:32 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fb222acd240>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000005488>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started GET "/user_profiles" for 127.0.0.1 at 2022-11-03 01:57:37 +0300
+Processing by UserProfilesController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 01:57:37 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 01:57:47 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fb222a71a08>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000005640>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:00:13 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fb222d59428>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2567)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000056e0>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:00:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fe9d05ec808>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 1620ms (ActiveRecord: 4.9ms | Allocations: 1056836)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000005230>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:00:36 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007fe9d27fcd08>, params: {"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M.pdf"}} }[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2581)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000052f8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started GET "/" for 127.0.0.1 at 2022-11-03 02:06:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 666)
+Completed 200 OK in 45ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 3641)
+
+
+Started GET "/job_applications" for 127.0.0.1 at 2022-11-03 02:07:03 +0300
+Processing by JobApplicationsController#index as HTML
+  [1m[36mJobApplication Load (5.5ms)[0m  [1m[34mSELECT "job_applications".* FROM "job_applications"[0m
+  ↳ app/controllers/job_applications_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.53ms)
+Completed 200 OK in 103ms (Views: 65.6ms | ActiveRecord: 16.3ms | Allocations: 21925)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:07:03 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 581)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:10:33 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb9ca17990>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 2215ms (ActiveRecord: 0.0ms | Allocations: 1026544)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000053e8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:12:12 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb957a5448>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (16.3ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:12:12.567877"], ["updated_at", "2022-11-02 23:12:12.567877"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 201 Created in 45ms (Views: 2.7ms | ActiveRecord: 32.1ms | Allocations: 4371)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:14:27 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb94fe0870>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 5.3ms | Allocations: 9441)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008d68>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:14:29 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb94417638>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2976)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008e30>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:14:34 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb95ca8d28>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2968)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000008ed0>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:15:59 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb95fdb6d0>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 9.0ms | Allocations: 6345)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x0000000000a9d8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:16:23 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb7c1cd5c0>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 7.9ms | Allocations: 5482)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x0000000000c508>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:16:27 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb952cdd58>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2565)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x0000000000c5a8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:16:48 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb90df1b08>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.4ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:16:48.765290"], ["updated_at", "2022-11-02 23:16:48.765290"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 201 Created in 22ms (Views: 2.4ms | ActiveRecord: 12.6ms | Allocations: 3902)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:18:35 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb7c439a48>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.5ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:18:35.130428"], ["updated_at", "2022-11-02 23:18:35.130428"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 201 Created in 33ms (Views: 3.5ms | ActiveRecord: 14.1ms | Allocations: 4053)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:19:05 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb961f7bf8>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}} }[0m
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 8.2ms | Allocations: 7842)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000116e8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:20:33 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb90f42a20>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}} }[0m
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 7.5ms | Allocations: 4096)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x000000000132b8>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:20:46 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb882c79d8>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}} }[0m
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 10.9ms | Allocations: 4096)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000014e60>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:20:49 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb7c4f9a28>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}} }[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2560)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000014f00>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:21:03 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb9646ea80>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>""}} }[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 12.3ms | Allocations: 4096)
+
+
+  
+NameError (undefined local variable or method `invalid' for #<JobApplicationsController:0x00000000016ad0>):
+  
+app/controllers/job_applications_controller.rb:35:in `render_unprocessable_entity_response'
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:21:30 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb90bd7958>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.6ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:21:30.929152"], ["updated_at", "2022-11-02 23:21:30.929152"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 201 Created in 21ms (Views: 3.8ms | ActiveRecord: 6.4ms | Allocations: 2520)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:22:48 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb7c70c388>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.5ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:22:48.230655"], ["updated_at", "2022-11-02 23:22:48.230655"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 201 Created in 33ms (Views: 7.4ms | ActiveRecord: 12.5ms | Allocations: 4033)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:25:13 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb9669c528>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (1.7ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:25:13.691451"], ["updated_at", "2022-11-02 23:25:13.691451"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.77ms)
+Completed 201 Created in 31ms (Views: 3.4ms | ActiveRecord: 16.0ms | Allocations: 4040)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:25:23 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb840ee4f8>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (1.6ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:25:24.094201"], ["updated_at", "2022-11-02 23:25:24.094201"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 201 Created in 28ms (Views: 3.3ms | ActiveRecord: 15.1ms | Allocations: 4042)
+
+
+Started POST "/job_applications" for 127.0.0.1 at 2022-11-03 02:25:38 +0300
+Processing by JobApplicationsController#create as */*
+  Parameters: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}}
+[31mUnpermitted parameter: :job_application. Context: { controller: JobApplicationsController, action: create, request: #<ActionDispatch::Request:0x00007ffb91116e28>, params: {"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf", "controller"=>"job_applications", "action"=>"create", "job_application"=>{"cover_letter"=>"n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ", "attachment"=>"C:\\fakepath\\A010641570M-1.pdf"}} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mJobApplication Create (0.8ms)[0m  [1m[32mINSERT INTO "job_applications" ("cover_letter", "attachment", "created_at", "updated_at", "user_profile_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["cover_letter", "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. "], ["attachment", "C:\\fakepath\\A010641570M-1.pdf"], ["created_at", "2022-11-02 23:25:38.544148"], ["updated_at", "2022-11-02 23:25:38.544148"], ["user_profile_id", nil]]
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/job_applications_controller.rb:16:in `create'
+[active_model_serializers] Rendered JobApplicationSerializer with ActiveModelSerializers::Adapter::Attributes (0.76ms)
+Completed 201 Created in 40ms (Views: 1.9ms | ActiveRecord: 7.2ms | Allocations: 2142)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-11-03 02:26:12 +0300
+Processing by UsersController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:26:13 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 225)
+
+
+Started GET "/user_profiles" for 127.0.0.1 at 2022-11-03 02:26:21 +0300
+Processing by UserProfilesController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 261)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:26:21 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 176)
+
+
+Started GET "/user_profiles" for 127.0.0.1 at 2022-11-03 02:27:06 +0300
+Processing by UserProfilesController#index as HTML
+  [1m[36mUserProfile Load (4.1ms)[0m  [1m[34mSELECT "user_profiles".* FROM "user_profiles"[0m
+  ↳ app/controllers/user_profiles_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.96ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 11.1ms | Allocations: 33416)
+
+
+  
+NoMethodError (undefined method `experience_date' for #<UserProfile id: 1, firstname: "Earnest", middlename: "Odhiambo", lastname: "Achayo", email: "earnytech@live.com", gender: "", age: "25", national_id: 28756543, address: "234 UGUNJA", phone: 723459867, county: "Mombasa", estate: "Mombala", user_id: 1, career_summary: "In publishing and graphic design, Lorem ipsum is a...", experience: "In publishing and graphic design, Lorem ipsum is a...", education: "In publishing and graphic design, Lorem ipsum is a...", skills_and_hobbies: "In publishing and graphic design, Lorem ipsum is a...", languages: "In publishing and graphic design, Lorem ipsum is a...", image: nil, created_at: "2022-11-02 20:45:11.015727000 +0000", updated_at: "2022-11-02 20:45:11.015727000 +0000", experience_start_date: "", experience_end_date: "", education_start_date: "", education_end_date: "">
+Did you mean?  experience_was
+               experience_end_date
+               experience_change):
+  
+app/controllers/user_profiles_controller.rb:8:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:27:07 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/user_profiles" for 127.0.0.1 at 2022-11-03 02:29:23 +0300
+Processing by UserProfilesController#index as HTML
+  [1m[36mUserProfile Load (3.1ms)[0m  [1m[34mSELECT "user_profiles".* FROM "user_profiles"[0m
+  ↳ app/controllers/user_profiles_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.11ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 10.6ms | Allocations: 16445)
+
+
+  
+NoMethodError (undefined method `experience_date' for #<UserProfile id: 1, firstname: "Earnest", middlename: "Odhiambo", lastname: "Achayo", email: "earnytech@live.com", gender: "", age: "25", national_id: 28756543, address: "234 UGUNJA", phone: 723459867, county: "Mombasa", estate: "Mombala", user_id: 1, career_summary: "In publishing and graphic design, Lorem ipsum is a...", experience: "In publishing and graphic design, Lorem ipsum is a...", education: "In publishing and graphic design, Lorem ipsum is a...", skills_and_hobbies: "In publishing and graphic design, Lorem ipsum is a...", languages: "In publishing and graphic design, Lorem ipsum is a...", image: nil, created_at: "2022-11-02 20:45:11.015727000 +0000", updated_at: "2022-11-02 20:45:11.015727000 +0000", experience_start_date: "", experience_end_date: "", education_start_date: "", education_end_date: "">
+Did you mean?  experience_was
+               experience_end_date
+               experience_change):
+  
+app/controllers/user_profiles_controller.rb:8:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:29:24 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/user_profiles" for 127.0.0.1 at 2022-11-03 02:29:53 +0300
+Processing by UserProfilesController#index as HTML
+  [1m[36mUserProfile Load (2.3ms)[0m  [1m[34mSELECT "user_profiles".* FROM "user_profiles"[0m
+  ↳ app/controllers/user_profiles_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.82ms)
+Completed 200 OK in 53ms (Views: 34.8ms | ActiveRecord: 8.1ms | Allocations: 11625)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 02:29:53 +0300
+Processing by ApplicationController#not_found as */*
+  Parameters: {"a"=>"favicon"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 320)
+
+
